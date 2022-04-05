@@ -25,8 +25,15 @@ class NinjaCard extends StatelessWidget {
         child: Column(
            crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CircleAvatar(
-              backgroundImage: AssetImage('assets/image0.png'),
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/image0.png'),
+                radius: 40,
+              ),
+            ),
+            Divider(
+              height: 60,
+              color: Colors.grey[800],
             ),
             Text('NAME',
               style: TextStyle(
